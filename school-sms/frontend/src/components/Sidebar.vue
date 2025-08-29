@@ -28,12 +28,13 @@
       <nav class="space-y-2">
         <RouterLink v-if="user?.role==='admin'" to="/dashboard" class="navlink">Dashboard</RouterLink>
         <RouterLink v-if="user?.role==='teacher'" to="/t/dashboard" class="navlink">Dashboard</RouterLink>
+        <RouterLink v-if="user?.role==='admin'" to="/teachers" class="navlink">Teachers</RouterLink>
         <RouterLink v-if="user?.role==='admin'" to="/classes" class="navlink">Class</RouterLink>
         <RouterLink v-if="user?.role==='admin'" to="/students" class="navlink">Students</RouterLink>
         <RouterLink to="/attendance" class="navlink">Attendance</RouterLink>
         <RouterLink to="/exams" class="navlink">Exams</RouterLink>
         <RouterLink to="/results" class="navlink">Results (Public)</RouterLink>
-        <RouterLink v-if="user?.role==='admin'" to="/teachers" class="navlink">Teachers</RouterLink>
+        
 
       </nav>
     </aside>

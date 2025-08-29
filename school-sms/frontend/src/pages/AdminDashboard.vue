@@ -39,12 +39,12 @@
     </div>
 
     <!-- Stats -->
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
-      <CardStat label="Total Class" :value="stats.total_classes" />
-      <CardStat label="Total Students" :value="stats.total_students" />
-      <CardStat label="Total Teachers" :value="stats.total_teachers" />
-      <CardStat label="Today's Attendance" :value="stats.last_attendance" />
-    </div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+  <CardStat label="Total Class"        :value="stats.total_classes"   icon="class"      color="emerald" />
+  <CardStat label="Total Students"     :value="stats.total_students"  icon="students"   color="pink" />
+  <CardStat label="Total Teachers"     :value="stats.total_teachers"  icon="teachers"   color="amber" />
+  <CardStat label="Today's Attendance" :value="stats.last_attendance" icon="attendance" color="sky" />
+</div>
   </div>
 </template>
 
